@@ -36,7 +36,14 @@ p, span {
      color: #4D4D4D;
      margin-bottom: 2.2rem;
 }
-
-#navigation a.active {
-     color: grey;
+ul {
+     margin-bottom: 2.2rem;
+}
+#navigation a {
+     text-decoration: none;
+     font-weight: 400;
+     font-family: 'Montserrat', arial, Helvetica, sans-serif;
+     font-size: 1.8rem;
+     color: black;
+     cursor: pointer;   
 }

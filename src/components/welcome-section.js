@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
+import CountdownTimer from '../components/timer'
 
 const SectionColor = styled.div`
   background-color: ${ props => props.background == "dark" ? "#F4F4F4": "#FFFCFC"};
   width: 100%;
+  position: relative;
 `
 const ContentContainer = styled.section`
      width: 100%;
@@ -18,9 +20,11 @@ const ContentContainer = styled.section`
      `
 const ContentWrapper = styled.div`
      width: 100%;
+     padding-top: 80px;
      @media only screen and (min-width: 992px) {
           width: 85%;
           margin-left: 15%;
+          padding-top: 100px;
      } 
 `;
 
@@ -59,6 +63,9 @@ class WelcomeSection extends React.Component {
                               <p>{content}</p>
                          </ContentWrapper>
                     </ContentContainer>
+                    <CountdownTimer
+                         date="03/22/2020"
+                    />
                </SectionColor>
           )
      }

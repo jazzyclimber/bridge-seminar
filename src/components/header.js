@@ -10,12 +10,22 @@ const Hero = styled.header`
   align-items: center;
   margin: 0 auto;
   width: 100%;
-  padding: 1.45rem 1.0875rem;
+  padding: 10.5rem 1.0875rem;
+
+  @media only screen and (min-width: 992px) {
+    padding: 20.5rem 1.0875rem ;
+  }
+
 `
 const HeroText = styled.div`
   text-align: center;
+  font-size: 3.7rem;
+  @media only screen and (min-width: 992px) {
+    
+  }
 `
 const HeroSubtitle = styled.div`
+  font-size: 2rem;
   @media only screen and (min-width: 992px) {
     font-size: 3.3rem;
     font-weight: 600;

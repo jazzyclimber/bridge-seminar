@@ -17,9 +17,13 @@ const ContentContainer = styled.section`
      `
 const ContentWrapper = styled.div`
      width: 100%;
+     @media only screen and (min-width: 992px) {
+          width: 85%;
+          margin-left: 15%;
+     } 
 `;
 
-class ContentSection extends React.Component {
+class RegistrationSection extends React.Component {
      
      render() {
      const { background = null, heading = "heading", content = "add content here", id } = this.props 
@@ -31,8 +35,9 @@ class ContentSection extends React.Component {
                     >
                     <ContentContainer>
                          <ContentWrapper>
-                              <h2>{heading}</h2>
-                              <p>{content}</p>
+                              <h2>Register</h2>
+                              
+
                          </ContentWrapper>
                     </ContentContainer>
                </SectionColor>
@@ -42,4 +47,4 @@ class ContentSection extends React.Component {
 
 
 
-export default ContentSection
+export default RegistrationSection

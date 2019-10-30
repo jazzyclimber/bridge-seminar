@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import {Link, animateScroll as scroll} from 'react-scroll';
 
  const ListItem = styled.li`
    text-decoration: none;
@@ -9,18 +10,9 @@ import styled from 'styled-components';
 const NavList = styled.ul`
      width: 100%;
 `;
-const NavLink = styled.a`
-  text-decoration: none;
-  font-weight: 400;
-  font-family: 'Montserrat', arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  color: black;
-
-  :active {
-  }
-`;
 const NavContainer = styled.div`
   display: none;
+  z-index: 100;
 
 @media only screen and (min-width: 992px){
   display: block;
@@ -28,7 +20,7 @@ const NavContainer = styled.div`
   background-color: transparent;
   display: inline;
   position: fixed;
-  top: ${ props => props.offset >= 200 ? props.offset + "px" : "200px" };
+  top: ${ props => props.offset >= 0 ? props.offset + 200 + "px" : "200px" }; /* sets iniital position of navigatin based on welcome section positin */
   left: 50px;
   bottom: 0;
 }
@@ -45,28 +37,8 @@ const NavContainer = styled.div`
 class Navigation extends React.Component {
 
 
-     state = {
-          fixPosition: '500px'
-     }
-
-
-     // handleScroll = () => {
-     //      let rect = this.getBoundingClientRectt();
-
-     //      this.setState({
-     //           scrolled: true,
-     //           windowPosition: rect
-     //      })
-
-     //    console.log(this.state);
-     // }
-
-     // componentDidMount() {
-     //      window.addEventListener('scroll', this.handleScroll);
-     //      console.log(this.state);
-     // }
-     // componentWillUnmount() {
-     //      window.removeEventListener('scroll', this.handleScroll);
+     // state = {
+     //      fixPosition: '300px'
      // }
 
      render() {
@@ -82,7 +54,14 @@ class Navigation extends React.Component {
                         {navList.map(
                               item => 
                                    <ListItem>
-                                        <NavLink href={item.link}>{item.item}</NavLink>
+                                        <Link 
+                                             smooth={true} 
+                                             activeClass="active"
+                                             to={item.link} 
+                                             // href={item.link} 
+                                             >
+                                                  {item.item}
+                                             </Link>
                                    </ListItem>
                         )}
                    </NavList>
