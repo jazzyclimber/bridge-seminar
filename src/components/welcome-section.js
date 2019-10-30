@@ -20,7 +20,7 @@ const ContentContainer = styled.section`
      `
 const ContentWrapper = styled.div`
      width: 100%;
-     padding-top: 80px;
+     padding: 80px 15px;
      @media only screen and (min-width: 992px) {
           width: 85%;
           margin-left: 15%;

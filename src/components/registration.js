@@ -8,7 +8,7 @@ const SectionColor = styled.div`
 const ContentContainer = styled.section`
      width: 100%;
      height: auto;
-     padding:  10rem 0;
+     padding:  10rem 15px;
 
      @media only screen and (min-width: 992px) {
           max-width: 1000px;
