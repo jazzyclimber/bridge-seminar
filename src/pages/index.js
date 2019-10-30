@@ -62,7 +62,7 @@ class IndexPage extends React.Component{
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Bridge Seminar" />
         <Navigation 
           navList={ navItems }
           navigationOffset={this.state.navigationOffset}
