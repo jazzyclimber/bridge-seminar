@@ -72,7 +72,7 @@ class IndexPage extends React.Component{
             id="first-section"
             callBack={this.welcomeSectionCallback} 
             heading="Welcome!"
-            content="The 2019 Midwest Bridge Seminar will be held on March 22nd, 2019 thru March 24th, 2019. We are thrilled to be hosting the Bridge Seminar at the Milwaukee Shobukan for the second year in a row. This year will boast an additional 3 hours of classes for a total of 18 hours of instruction!"
+            content="The 2020 Midwest Bridge Seminar will be held on March 20th - March 22nd. We are thrilled to be hosting the Bridge Seminar at the Milwaukee Shobukan for the second year in a row. This year will boast an additional 3 hours of classes for a total of 18 hours of instruction!"
             />
           <PricingSection
             id="pricing"

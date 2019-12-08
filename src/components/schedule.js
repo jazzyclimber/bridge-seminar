@@ -46,13 +46,17 @@ const TableColumn = styled.div`
      justify-content:center;
 `;
 const TableData = styled.div`
-     font-size: ${props => props.heading ? "2.2rem" : "1.8rem"};
+     font-size: ${props => props.heading ? "2.2rem" : "1.6rem"};
      font-weight: ${props => props.heading ? "600" : "300"};
      background-color: ${props => props.dark ? "#eeeeee": "initial"};
      font-family: "Montserrat", Arial, Helvetica, sans-serif;
      border-bottom: 1px solid #eeeeee;
      padding: 10px 0;
      text-align: center;
+
+     @media (min-width: 870px) {
+          font-size: ${props => props.heading ? "2.2rem" : "1.8rem"};
+     }
 
 `;
 
@@ -77,43 +81,43 @@ class ScheduleSection extends React.Component {
                "slot11": "07:00-07:55"
                }, {
                "heading": "FRIDAY",
-               "slot1": "Instructor",
-               "slot2": "Instructor",
-               "slot3": "Instructor",
-               "slot4": "Instructor",
-               "slot5": "Instructor",
-               "slot6": "Instructor",
-               "slot7": "Instructor",
-               "slot8": "Instructor",
-               "slot9": "Instructor",
-               "slot10": "Instructor",
-               "slot11": "Instructor"
+               "slot1": "Hiroshi Ikeda Shihan",
+               "slot2": "Mary Heiny Sensei",
+               "slot3": "Lisa Tomoleoni Sensei",
+               "slot4": "Lunch",
+               "slot5": "Lunch",
+               "slot6": "Mary Heiny Sensei",
+               "slot7": "John Gralton Sensei",
+               "slot8": "Lisa Tomoleoni Sensei",
+               "slot9": "Hiroshi Ikeda Shihan",
+               "slot10": "Pizza Party at Dojo",
+               "slot11": "---"
           }, {
                "heading": "SATURDAY",
-               "slot1": "Instructor",
-               "slot2": "Instructor",
-               "slot3": "Instructor",
-               "slot4": "Instructor",
-               "slot5": "Instructor",
-               "slot6": "Instructor",
-               "slot7": "Instructor",
-               "slot8": "Instructor",
-               "slot9": "Instructor",
-               "slot10": "Instructor",
-               "slot11": "Instructor"
+               "slot1": "Lisa Tomoleoni Sensei",
+               "slot2": "Mary Heiny Sensei",
+               "slot3": "Hiroshi Ikeda Shihan",
+               "slot4": "Lunch",
+               "slot5": "Lunch",
+               "slot6": "Mary Heiny Sensei",
+               "slot7": "Andrew Vitale Sensei",
+               "slot8": "Lisa Tomoleoni Sensei",
+               "slot9": "Hiroshi Ikeda Shihan",
+               "slot10": "Dinner @ Harvey Moy's",
+               "slot11": "---"
           }, {
                "heading": "SUNDAY",
-               "slot1": "Instructor",
-               "slot2": "Instructor",
-               "slot3": "Instructor",
-               "slot4": "Instructor",
-               "slot5": "Instructor",
-               "slot6": "Instructor",
-               "slot7": "Instructor",
-               "slot8": "Instructor",
-               "slot9": "Instructor",
-               "slot10": "Instructor",
-               "slot11": "Instructor"
+               "slot1": "TBD Sensei",
+               "slot2": "Mary Heiny Sensei",
+               "slot3": "Lisa Tomoleoni Sensei",
+               "slot4": "Hiroshi Ikeda Shihan",
+               "slot5": "---",
+               "slot6": "---",
+               "slot7": "---",
+               "slot8": "---",
+               "slot9": "---",
+               "slot10": "---",
+               "slot11": "---"
           }
           ] 
      }
